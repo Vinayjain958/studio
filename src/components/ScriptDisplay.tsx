@@ -129,7 +129,7 @@ export function ScriptDisplay({ script, onRegenerate }: ScriptDisplayProps) {
         <Button onClick={handleCopy}>
           <Copy />
           Copy Script
-        Button>
+        </Button>
       </CardFooter>
     </Card>
   );
