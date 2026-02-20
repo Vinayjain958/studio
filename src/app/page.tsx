@@ -46,10 +46,6 @@ function normalizeRegeneratedScript(
           { type: 'dialogue' as const, content: block.content },
         ];
       }
-      // Add scene_heading for consistency
-      if (block.type === 'action' && scriptElements.length === 0) {
-        return { type: 'action' as const, content: block.content };
-      }
       return { type: block.type, content: block.content };
     })
     .flat();
